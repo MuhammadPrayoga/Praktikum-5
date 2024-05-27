@@ -7,7 +7,7 @@ CREATE TABLE Dosen (
     nama VARCHAR(50) NOT NULL
 );
 ```
-* Masukkan Data ke Dalam Table Dosen
+* Masukkan Data ke Dalam Table
 ```sql
 INSERT INTO Dosen VALUES
 ('DS001', 'Nofal Arianto'),
