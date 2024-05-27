@@ -158,6 +158,7 @@ tabel dosen memiliki kolom kd_ds sementara tabel matakuliah tidak.
 table matakuliah memiliki kolom kd_mk sementara tabel dosen tidak. 
 Tidak ada Foreign Key yang sama sehingga tidak bisa saling berelasi/JOIN.
 ``
+
 3. Lakukan join table JadwalMengajar, Dosen dan Matakuliah
 ```sql
 SELECT
