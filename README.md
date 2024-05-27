@@ -128,13 +128,12 @@ INSERT INTO JadwalMengajar VALUES
 ![](Foto/tablejadwalmengajar.png)
 
 # Praktikum
-
-1. Lakukan join table Mahasiswa dan Dosen
-2. Lakukan join table Matakuliah dan Dosen
-3. Lakukan join table JadwalMengajar, Dosen dan Matakuliah
-4. Lakukan join table KRSMahasiswa, Mahasiswa, Matakuliah dan Dosen
-
-1. Lakukan join table Mahasiswa dan Dosen
+- Lakukan join table Mahasiswa dan Dosen
+- Lakukan join table Matakuliah dan Dosen
+- Lakukan join table JadwalMengajar, Dosen dan Matakuliah
+- Lakukan join table KRSMahasiswa, Mahasiswa, Matakuliah dan Dosen
+---
+- Lakukan join table Mahasiswa dan Dosen
 ```sql
 SELECT
 mahasiswa.nim,
@@ -146,7 +145,7 @@ JOIN dosen ON mahasiswa.kd_ds = dosen.kd_ds;
 ```
 ![](Foto/1.png)
 
-2. Lakukan join table Matakuliah dan Dosen
+- Lakukan join table Matakuliah dan Dosen
 ```sql
 SELECT * FROM Matakuliah
 JOIN dosen ON matakuliah.kd_ds = dosen.kd_ds;
@@ -159,7 +158,7 @@ table matakuliah memiliki kolom kd_mk sementara tabel dosen tidak.
 Tidak ada Foreign Key yang sama sehingga tidak bisa saling berelasi/JOIN.
 ``
 
-3. Lakukan join table JadwalMengajar, Dosen dan Matakuliah
+- Lakukan join table JadwalMengajar, Dosen dan Matakuliah
 ```sql
 SELECT
 matakuliah.kd_mk,
@@ -172,8 +171,7 @@ JOIN jadwalmengajar ON matakuliah.kd_mk = jadwalmengajar.kd_mk
 JOIN dosen ON jadwalmengajar.kd_ds = dosen.kd_ds;
 ```
 ![](Foto/3.png)
-
-4. Lakukan join table KRSMahasiswa, Mahasiswa, Matakuliah dan Dosen
+- Lakukan join table KRSMahasiswa, Mahasiswa, Matakuliah dan Dosen
 ```sql
 SELECT 
 krsmahasiswa.nim,
