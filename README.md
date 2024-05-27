@@ -72,7 +72,7 @@ INSERT INTO MataKuliah VALUES
 ('MK007', 'Struktur Data', 3),
 ('MK008', 'Arsitektur Komputer', 2);
 ```
-![](Foto/matakuliah.png)
+![](Foto/tablematakuliah.png)
 
 * Membuat Table KRSMahasiswa
 ```sql
