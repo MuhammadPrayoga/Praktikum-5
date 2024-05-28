@@ -190,6 +190,10 @@ JOIN dosen ON krsmahasiswa.kd_ds = dosen.kd_ds;
 ```
 ![](Foto/4.png)
 
+``
+Note : Adanya data yang redudansi data mahasiswa bernama 'Dina Marlina' biasanya terjadi karena Data Duplikat, jika tabel yang di-join memiliki banyak baris yang cocok, hasilnya akan menampilkan setiap kombinasi dari baris-baris tersebut, yang dapat menyebabkan data yang sama muncul berulang kali.
+``
+
 # Latihan
 * JOIN Table Mahasiswa dan Dosen
 ```sql
@@ -226,7 +230,7 @@ FROM jadwalMengajar
 JOIN dosen ON jadwalMengajar.kd_ds = dosen.kd_ds
 JOIN matakuliah ON jadwalMengajar.kd_mk = matakuliah.kd_mk;
 ```
-1[](Foto/6.png)
+![](Foto/6.png)
 
 * JOIN Table JadwalMengajar, Dosen, dan Matakuliah
 ```sql
