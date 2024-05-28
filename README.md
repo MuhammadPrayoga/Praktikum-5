@@ -165,7 +165,10 @@ matakuliah.kd_mk,
 matakuliah.nama AS 'Mata Kuliah',
 matakuliah.sks,
 dosen.kd_ds,
-dosen.nama AS 'Dosen Pengampu'
+dosen.nama AS 'Dosen Pengampu',
+jadwalmengajar.hari,
+jadwalmengajar.jam,
+jadwalmengajar.ruang
 FROM matakuliah
 JOIN jadwalmengajar ON matakuliah.kd_mk = jadwalmengajar.kd_mk
 JOIN dosen ON jadwalmengajar.kd_ds = dosen.kd_ds;
