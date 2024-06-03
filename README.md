@@ -147,16 +147,18 @@ JOIN dosen ON mahasiswa.kd_ds = dosen.kd_ds;
 
 - Lakukan join table Matakuliah dan Dosen
 ```sql
-SELECT * FROM Matakuliah
-JOIN dosen ON matakuliah.kd_ds = dosen.kd_ds;
+SELECT
+matakuliah.kd_mk,
+matakuliah.nama as 'Mata Kuliah',
+matakuliah.sks,
+dosen.kd_ds,
+dosen.nama as 'Dosen Pengampu'
+FROM matakuliah
+JOIN jadwalmengajar ON matakuliah.kd_mk = jadwalmengajar.kd_mk
+JOIN dosen ON jadwalmengajar.kd_ds = dosen.kd_ds;
 ```
 ![](Foto/2.png)
 
-``Note: Terjadi error karena tidak ada relasi antara kedua tabel.
-tabel dosen memiliki kolom kd_ds sementara tabel matakuliah tidak.
-table matakuliah memiliki kolom kd_mk sementara tabel dosen tidak. 
-Tidak ada Foreign Key yang sama sehingga tidak bisa saling berelasi/JOIN.
-``
 
 - Lakukan join table JadwalMengajar, Dosen dan Matakuliah
 ```sql
